@@ -7,17 +7,17 @@ import { BACKENDURL } from "./config";
 export function Auth2(){
     const navigate=useNavigate()
     
-const [name,setName]=useState("");
+
 const [username,setuserName]=useState("");
 const [password,setpassword]=useState("");
 async function SendReq(){
-    const response=await axios.post(`${BACKENDURL}/api/v1/user/signup`,{
-      name,
-      username,
+    const response=await axios.post(`${BACKENDURL}/api/v1/user/signin`,{
+      
+      name:username,
       password
 
     })
-    const jwt=response.data;
+    const jwt=response.data.token;
     localStorage.setItem("token",jwt);
     navigate("/blogs")
     

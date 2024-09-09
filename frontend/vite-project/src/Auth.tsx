@@ -17,7 +17,7 @@ async function SendReq(){
       password
 
     })
-    const jwt=response.data;
+    const jwt=response.data.jwt;
     localStorage.setItem("token",jwt);
     navigate("/blogs")
     

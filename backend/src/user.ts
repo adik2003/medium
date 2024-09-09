@@ -44,7 +44,7 @@ userRouter.post("/signin",async(c)=>{
   const name=body.name;
   const password=body.password
   const user=await prisma.user.findUnique({
-    where:{name:name}
+    where:{name:name,password:password}
     
     
   }
