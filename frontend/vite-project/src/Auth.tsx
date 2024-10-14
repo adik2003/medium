@@ -19,6 +19,7 @@ async function SendReq(){
     })
     const jwt=response.data.jwt;
     localStorage.setItem("token",jwt);
+    alert("Signed Up Succesfully");
     navigate("/blogs")
     
 }

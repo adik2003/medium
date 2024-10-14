@@ -18,8 +18,13 @@ async function SendReq(){
 
     })
     const jwt=response.data.token;
+    if(!jwt) {
+        alert("Invalid Inputs");
+    }
+    else {
     localStorage.setItem("token",jwt);
     navigate("/blogs")
+    }
     
 }
 return <div className="flex justify-center flex-col ">
