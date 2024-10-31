@@ -27,7 +27,7 @@ async function SendReq(){
     }
     
 }
-return <div className="flex justify-center flex-col ">
+return <div className="h-screen flex justify-center flex-col ">
 
     <div className="flex justify-center">
         <div> <div className="px-5">
@@ -35,8 +35,8 @@ return <div className="flex justify-center flex-col ">
     Login to your account
 </div>
 
-<div className="pl-9 pt-1flex text-slate-400">Dont have an account?
-<Link className="underline pl-2" to={"/signup"}>Signup</Link>
+<div className="pl-9 pt-1 flex text-slate-400">Dont have an account?
+<Link className="underline pl-1" to={"/signup"}>Signup</Link>
 </div>
 
 </div>

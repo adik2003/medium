@@ -23,7 +23,7 @@ async function SendReq(){
     navigate("/blogs")
     
 }
-return <div className="flex justify-center flex-col ">
+return <div className="h-screen flex justify-center flex-col ">
 
     <div className="flex justify-center">
         <div> <div className="px-10">
@@ -32,7 +32,7 @@ return <div className="flex justify-center flex-col ">
 </div>
 
 <div className="pl-3 pt-1flex text-slate-400">Already have an account?
-<Link className="underline pl-2" to={"/signin"}>Login</Link>
+<Link className="underline pl-1" to={"/signin"}>Login</Link>
 </div>
 
 </div>
